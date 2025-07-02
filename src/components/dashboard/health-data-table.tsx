@@ -32,7 +32,7 @@ export function HealthDataTable({ data, isLoading }: HealthDataTableProps) {
   );
 
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>Health Data Analysis</CardTitle>
         <CardDescription>
@@ -40,8 +40,8 @@ export function HealthDataTable({ data, isLoading }: HealthDataTableProps) {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="rounded-md border">
-          <Table>
+        <div className="rounded-md border overflow-x-auto">
+          <Table className="min-w-[500px] text-xs sm:text-sm">
             <TableHeader>
               <TableRow>
                 <TableHead>Parameter</TableHead>

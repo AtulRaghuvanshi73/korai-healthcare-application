@@ -25,17 +25,17 @@ export function ReportUploader({ onUpload, isLoading }: ReportUploaderProps) {
   };
 
   return (
-    <Card>
+    <Card className="w-full">
       <CardHeader>
         <CardTitle>Upload Report</CardTitle>
         <CardDescription>Upload a PDF or image of your health report to begin analysis.</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 p-4 sm:p-6">
         <div className="grid w-full max-w-sm items-center gap-1.5">
           <Label htmlFor="report-file" className="sr-only">Health Report</Label>
           <Input id="report-file" type="file" accept=".pdf,.png,.jpg,.jpeg" onChange={handleFileChange} disabled={isLoading} />
         </div>
-        {fileName && <p className="text-sm text-muted-foreground">Selected file: {fileName}</p>}
+        {fileName && <p className="text-xs sm:text-sm text-muted-foreground">Selected file: {fileName}</p>}
         <Button onClick={onUpload} disabled={isLoading || !fileName} className="w-full">
           {isLoading ? (
             <>

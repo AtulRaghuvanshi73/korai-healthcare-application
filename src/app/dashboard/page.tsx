@@ -52,12 +52,12 @@ export default function DashboardPage() {
   return (
     <>
       <SignedIn>
-        <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-3 lg:gap-8">
-          <div className="grid auto-rows-max items-start gap-4 lg:col-span-1 lg:gap-8">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 lg:grid-cols-3">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 lg:col-span-1">
             <ReportUploader onUpload={handleReportUpload} isLoading={isLoading} />
             <TrendsChart />
           </div>
-          <div className="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8">
+          <div className="flex flex-col gap-4 sm:gap-6 md:gap-8 lg:col-span-2">
             <HealthDataTable data={healthData} isLoading={isLoading} />
           </div>
         </div>

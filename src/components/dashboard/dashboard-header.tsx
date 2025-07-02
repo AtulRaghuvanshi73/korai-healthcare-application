@@ -23,12 +23,12 @@ export default function DashboardHeader() {
   };
 
   return (
-    <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-card px-4 md:px-8 z-10 m-0">
-      <Link href="/dashboard" className="flex items-center gap-2 font-semibold">
-        <Leaf className="h-6 w-6 text-primary" />
-        <span className="font-headline text-lg">Health Insights Analyzer</span>
+    <header className="sticky top-0 flex h-16 items-center gap-2 sm:gap-4 border-b bg-card px-2 sm:px-4 md:px-8 z-10 m-0 w-full">
+      <Link href="/dashboard" className="flex items-center gap-1 sm:gap-2 font-semibold min-w-0">
+        <Leaf className="h-5 w-5 sm:h-6 sm:w-6 text-primary flex-shrink-0" />
+        <span className="font-headline text-base sm:text-lg truncate block max-w-[120px] sm:max-w-none">Health Insights Analyzer</span>
       </Link>
-      <div className="ml-auto flex items-center gap-4">
+      <div className="ml-auto flex items-center gap-2 sm:gap-4">
         <UserButton afterSignOutUrl="/dashboard" />
       </div>
     </header>

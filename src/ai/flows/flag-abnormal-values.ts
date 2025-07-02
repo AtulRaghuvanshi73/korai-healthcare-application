@@ -1,7 +1,3 @@
-// This is an AI-powered health insights analyzer.
-//
-// As a user, I want the application to automatically flag any health parameter values that are outside the normal range as 'Needs Attention', so I can quickly identify potential issues in my health reports.
-
 'use server';
 
 import {ai} from '@/ai/genkit';
