@@ -27,7 +27,7 @@ Below is a screenshot of the application in action:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/AtulRaghuvanshi73/korai-healthcare-application-demo.git
    cd korai_healtcare_application
    ```
 2. **Install dependencies:**
