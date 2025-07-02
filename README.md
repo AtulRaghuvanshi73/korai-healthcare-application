@@ -13,9 +13,11 @@ A modern web application for analyzing health reports and visualizing key health
 
 ## Demo
 
-Below is a screenshot of the application in action:
+Below is a screenshot and deployed link of the application :
 
 ![Demo Screenshot](./public/demo-image.png)
+
+[click to visit the deployed link](https://korai-healthcare-project-demo-app.netlify.app/dashboard)
 
 ## Getting Started
 
