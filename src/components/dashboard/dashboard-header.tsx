@@ -19,7 +19,7 @@ export default function DashboardHeader() {
   const router = useRouter();
 
   const handleLogout = () => {
-    router.push('/login');
+    router.push('/dashboard');
   };
 
   return (
